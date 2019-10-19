@@ -6,24 +6,24 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-/**
- * TODO:
- * - [] Canonical and sitemap configure
- * - [x] Image optimize on About page
- * - [x] SVGs optimize on About page
- * */
+import ContactForm from 'components/page/Contact/ContactForm';
 
-const IndexPage = ({ location }) => (
+const ContactPage = ({ location }) => (
     <Layout>
-        <SEO title="Home" location={location} />
+        <SEO title="Contact" location={location} />
         <Container>
             <Row>
                 <Col>
-                    <h1>Home page</h1>
+                    <h1>Contact page</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <ContactForm />
                 </Col>
             </Row>
         </Container>
     </Layout>
 );
 
-export default IndexPage;
+export default ContactPage;
