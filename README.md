@@ -77,12 +77,12 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── data
     ├── node_modules
     ├── src
-    │	├── assets
-    │	├── components
-    │	│	├── page
-    │	│	├── partials
-    │	│	└── theme
-    │	└── pages
+    │├── assets
+    │├── components
+    ││├── page
+    ││├── partials
+    ││└── theme
+    │└── pages
     ├── static
     ├── .eslintrc
     ├── .gitignore
