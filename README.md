@@ -7,7 +7,6 @@
   Gatsby's starter
 </h1>
 <p align="center"><i style="font-size: 1rem; color: #ccc;">this starter was not tested yet and its still in development, so there can be some bugs...</i></p>
-
 Are you bored of configuring default starter kit over and over again? So... here we go!
 
 ##  🤔 Why Gatsby? Pros vs Cons
@@ -77,12 +76,12 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── data
     ├── node_modules
     ├── src
-    │├── assets
-    │├── components
-    ││├── page
-    ││├── partials
-    ││└── theme
-    │└── pages
+    │	├── assets
+    │	├── components
+    │	│	├── page
+    │	│	├── partials
+    │	│	└── theme
+    │	└── pages
     ├── static
     ├── .eslintrc
     ├── .gitignore
