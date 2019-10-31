@@ -32,6 +32,7 @@ export const Footer = () => (
                         aria-label={`follow me on ${name}`}
                     >
                         {/* 
+                            TODO:
 							Put icons in assets/icons and update social.json
 							<img width="24" src={icon} alt={name} /> 
 						*/}
