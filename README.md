@@ -21,6 +21,7 @@ Are you bored of configuring default starter kit over and over again? So... here
 - No page reload when navigating
 - Can use data from any source like WordPress, Contentful, MD Files and more
 - Lot of starter kits and plugins
+- Gatsby Preview as a shareable, real-time private playground for developers, designers and content creators
 
 ### Cons
 
@@ -76,12 +77,12 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── data
     ├── node_modules
     ├── src
-    │	├── assets
-    │	├── components
-    │	│	├── page
-    │	│	├── partials
-    │	│	└── theme
-    │	└── pages
+    │    ├── assets
+    │    ├── components
+    │    │    ├── page
+    │    │    ├── partials
+    │    │    └── theme
+    │    └── pages
     ├── static
     ├── .eslintrc
     ├── .gitignore
@@ -132,7 +133,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 6. **`.prettierrc`** & **`.prettierignore`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
 7. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-   For example, if you are using **Redux** - you want to wrap all your page of Provider, so you can use `wrapRootElement ` hook.
+   For example, if you are using **Redux** - you want to wrap all your page of Provider, so you can use `wrapRootElement` hook.
 
 8. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
    Let's take a look what changed here:

@@ -6,13 +6,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-/**
- * TODO:
- * - [] Canonical and sitemap configure
- * - [x] Image optimize on About page
- * - [x] SVGs optimize on About page
- * */
-
 const IndexPage = ({ location }) => (
     <Layout>
         <SEO title="Home" location={location} />
