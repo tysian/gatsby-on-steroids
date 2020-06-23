@@ -65,66 +65,71 @@ Are you bored of configuring default starter kit over and over again? So... here
 
     Your site is now running at `http://localhost:8000`!
 
-    *Note: You'll also see a second link:* `http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+    *Note: You'll also see a second link:* `http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).
 
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
-
-    .
-    ├── data
-    ├── node_modules
-    ├── src
-    │    ├── assets
-    │    ├── components
-    │    │    ├── page
-    │    │    ├── partials
-    │    │    └── theme
-    │    └── pages
-    ├── static
-    ├── .eslintrc
-    ├── .gitignore
-    ├── .prettierignore
-    ├── .prettierrc
-    ├── .stylelintrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+```
+.
+├── LICENSE
+├── README.md
+├── data
+│   └── config.js
+├── gatsby-browser.js
+├── gatsby-config.js
+├── gatsby-node.js
+├── gatsby-ssr.js
+├── package-lock.json
+├── package.json
+├── src
+│   ├── assets
+│   │   ├── fonts
+│   │   │   └── README.md
+│   │   ├── icons
+│   │   │   └── arrow-dropdown.svg
+│   │   ├── images
+│   │   │   ├── example-image.jpg
+│   │   │   ├── gatsby-astronaut.png
+│   │   │   └── gatsby-icon.png
+│   │   └── styles
+│   │       └── fonts.css
+│   ├── components
+│   │   ├── Button
+│   │   │   └── Button.js
+│   │   ├── ContactForm
+│   │   │   ├── ContactForm.js
+│   │   │   └── ContactForm.styles.js
+│   │   ├── Footer
+│   │   │   ├── Footer.js
+│   │   │   ├── Footer.styles.js
+│   │   │   └── social.json
+│   │   ├── Header
+│   │   │   ├── Header.js
+│   │   │   └── Header.styles.js
+│   │   └── Image
+│   │       └── Image.js
+│   ├── layout
+│   │   ├── Layout.js
+│   │   ├── Layout.styles.js
+│   │   ├── SEO.js
+│   │   └── theme.js
+│   └── pages
+│       ├── 404.js
+│       ├── about.js
+│       ├── contact.js
+│       └── index.js
+├── static
+│   └── thumbnail
+│       └── reactjs-logo-512.png
+└── yarn.lock
+```
 
 1. **`/data`** - This directory contains all page data, like URLs, author info,  theme color, socials, etc.
 
-2. **`/node_modules`**: This directory contains all of the modules of code that your project depends on (NPM packages) are automatically installed.
-
-3. **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
-
-   + **`/assets`** - This directory will contain fonts, images, icons (mostly *SVG* ones), CSS styles (for example *@font-face* styles, because it's buggy in styled-components)
-
-   + **`/components`** - This directory contains all components used in your app.
-     I recommend to use convention, where  `index.jsx` (you can use both `.js` or `.jsx`) is core of this component and styled-component styles are in `styles.js` like:
-
-     ```
-     Component
-     ├── index.jsx
-     └── styles.js
-     ```
-
-     There are a few directories inside:
-
-     + **`/page`** - specific page related components (e.g. `ContactForm` component)
-     + **`/partials`** - components that are used/imported more than once, like `Button` or `Card`
-     + **`/theme`** - theme related components, like `Header` or `Footer`, imported only once in `Layout` component
-
-   + **`/pages`** - main routing in Gatsby, files in this directory represent pages, for example:
-
-     + `index.js` = `/` path
-     + `about.js` = `/about` path
+3. **`/src`**: This directory will contain all the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
 4.  **`/static`** - This directory contains static files. They will be copied to `public` folder
 
@@ -158,19 +163,19 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
      ``` jsx
      // before
-     @import Layout from '../../partials/Layout'
+     @import Layout from '../../components/Button'
      
      //after
-     @import Layout from 'partials/Layout'
+     @import Layout from 'components/Button'
      ```
 
    + **`gatsby-source-filesystem`** - helper with filesystem management, for example graphql imports
 
    + **`gatsby-plugin-eslint`** & **`gatsby-plugin-stylelint`** - linters configuration
+   
+   + **`gatsby-plugin-layout`** - creates wrapper for all pages
 
    + **`gatsby-plugin-nprogress`** - uses  [NProgress](http://ricostacruz.com/nprogress/) library to represent page loader
-
-   
 
 9. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process. 
    For example: you can use `createPages` function to create pages dynamically (blog posts, user profiles, etc.) using data from REST/GraphQL request **OR** even set of **`*.md`** files. 

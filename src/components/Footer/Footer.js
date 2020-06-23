@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, Flex, Links, Details } from './styles';
+import { Wrapper, Flex, Links, Details } from './Footer.styles';
 import social from './social.json';
 
 export const Footer = () => (

@@ -4,7 +4,7 @@ import { Form, withFormik, FastField, ErrorMessage } from 'formik';
 import Recaptcha from 'react-google-recaptcha';
 import * as Yup from 'yup';
 import { recaptcha_key } from 'data/config';
-import { Error, Center, InputField } from './styles';
+import { Error, Center, InputField } from './ContactForm.styles';
 
 const Input = styled.input`
     width: 100%;

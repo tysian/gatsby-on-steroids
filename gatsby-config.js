@@ -20,6 +20,12 @@ module.exports = {
         `gatsby-plugin-sitemap`,
         `gatsby-plugin-optimize-svgs`,
         {
+            resolve: `gatsby-plugin-layout`,
+            options: {
+                component: require.resolve(`./src/layout/Layout`),
+            },
+        },
+        {
             resolve: `gatsby-plugin-canonical-urls`,
             options: {
                 siteUrl: config.url,
@@ -46,8 +52,8 @@ module.exports = {
                 assets: path.join(__dirname, 'src/assets'),
                 // main components folder
                 components: path.join(__dirname, 'src/components'),
-                // reusable components like Buttons, Cards or Layout (Layout is used multiple times in all pages)
-                partials: path.join(__dirname, 'src/components/partials'),
+                // layout folder which contain main theme stuff like SEO, Layout or theme settings
+                layout: path.join(__dirname, 'src/layout'),
                 // Folder with data, such as page info, google analitycs or google recaptcha
                 data: path.join(__dirname, 'data'),
                 // static files, they are copied directly into public/ folder

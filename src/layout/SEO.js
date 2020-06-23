@@ -22,9 +22,10 @@ import {
     themeColor,
     language,
 } from 'data/config';
+
 import 'bootstrap/dist/css/bootstrap.css';
 
-export const SEO = ({ title: pageTitle, location: { pathname } }) => {
+export default ({ title: pageTitle, location: { pathname } }) => {
     const title =
         pathname !== '/' ? `${pageTitle} | ${defaultTitle}` : defaultTitle;
     const structuredDataOrganization = `{ 
@@ -89,5 +90,3 @@ export const SEO = ({ title: pageTitle, location: { pathname } }) => {
         </Helmet>
     );
 };
-
-export default SEO;

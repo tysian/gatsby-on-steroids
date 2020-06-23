@@ -1,15 +1,14 @@
 import React from 'react';
-import Layout from 'partials/Layout';
-import SEO from 'partials/SEO';
+import SEO from 'layout/SEO';
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import ContactForm from 'components/page/Contact/ContactForm';
+import ContactForm from '../components/ContactForm/ContactForm';
 
 const ContactPage = ({ location }) => (
-    <Layout>
+    <>
         <SEO title="Contact" location={location} />
         <Container>
             <Row>
@@ -23,7 +22,7 @@ const ContactPage = ({ location }) => (
                 </Col>
             </Row>
         </Container>
-    </Layout>
+    </>
 );
 
 export default ContactPage;

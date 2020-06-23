@@ -8,7 +8,8 @@ const StyledImage = styled(Img)`
     margin-top: 30px;
 `;
 
-const myAwesomeImage = () => {
+
+export default () => {
     /**
      * TODO:
      * - [] Find a way to make it reusable
@@ -31,5 +32,3 @@ const myAwesomeImage = () => {
         </>
     );
 };
-
-export default myAwesomeImage;
