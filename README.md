@@ -49,7 +49,7 @@ Are you bored of configuring default starter kit over and over again? So... here
 
     ```shell
     # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    gatsby new my-default-starter https://github.com/tysian/gatsby-on-steroids
     ```
 
 2.  **Start developing.**
