@@ -13,6 +13,7 @@
     "gatsby-image": "^2.2.29",
     "gatsby-plugin-canonical-urls": "^2.1.13",
     "gatsby-plugin-google-analytics": "^2.1.23",
+    "gatsby-plugin-layout": "^1.3.5",
     "gatsby-plugin-manifest": "^2.2.23",
     "gatsby-plugin-nprogress": "^2.1.12",
     "gatsby-plugin-offline": "^3.0.16",
@@ -44,8 +45,8 @@
     "gatsby-plugin-eslint": "^2.0.5",
     "gatsby-plugin-root-import": "^2.0.5",
     "gatsby-plugin-stylelint": "^3.2.0",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.2",
+    "husky": ">=4",
+    "lint-staged": ">=10",
     "prettier": "^1.18.2",
     "stylelint": "^11.1.1",
     "stylelint-config-recommended": "^3.0.0",
@@ -83,6 +84,8 @@
       "eslint --fix",
       "stylelint --fix",
       "git add"
-    ]
+    ],
+    "*.css": "stylelint --fix",
+    "*.{js,jsx,json,md}": "prettier --write"
   }
 }
